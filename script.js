@@ -1,5 +1,6 @@
 const apiKey = "4a67a28812974097997201250230604";
-function savecity() {
+
+function cityname() {
   const city = document.getElementById("city");
   console.log("aaaaaaaaaaaaaaa", city.value);
 
@@ -8,10 +9,11 @@ function savecity() {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log("bbbbbbbbbbbbbbbb", data);
-
+      const weather = data.current;
+      console.log("bbbbbbbbbbbbbbbb", weather);
+      document.getElementById("temperature").textContent = weather.temp_c;
     })
     .catch((error) => {
-      console.error("Error fetching weather data: ", error.current.cloud);
+      console.error("Error fetching weather data: ", error.current);
     });
 }
