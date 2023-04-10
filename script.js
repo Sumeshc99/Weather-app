@@ -12,6 +12,11 @@ function cityname() {
       const weather = data.current;
       console.log("bbbbbbbbbbbbbbbb", weather);
       document.getElementById("temperature").textContent = weather.temp_c;
+      document.getElementById("img").src = weather.condition.icon;
+      document.getElementById("condition").textContent = weather.condition.text;
+      document.getElementById("feel").textContent = weather.feelslike_c;
+      document.getElementById("humidity").textContent = weather.humidity;
+      document.getElementById("wind").textContent = weather.wind_kph;
     })
     .catch((error) => {
       console.error("Error fetching weather data: ", error.current);

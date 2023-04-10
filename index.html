@@ -90,37 +90,39 @@
     </nav>
 
     <!--main body-->
-
-    <div class="col-5 container">
-      <div class="title">
-        <h1>Weather App</h1>
-      </div>
-      <div class="location">
-        <input type="text" id="city" placeholder="Enter a location" />
-        <button type="button" onclick="cityname()">Get Weather</button>
-      </div>
-      <div class="weather">
-        <div class="temperature">
-          <h2 id="temperature"> "&#176;C"</h2>
+    <div class="leftrightDiv">
+      <div class="col-5 container">
+        <div class="title">
+          <h1>Weather App</h1>
         </div>
-        <div class="condition">
-          <img
-            src="https://www.weather.com/assets/resources/static/weather/images/icons/{{icon_code}}_white_128x128.png"
-          />
-          <h3>{{weather_condition}}</h3>
+        <div class="location">
+          <input type="text" id="city" placeholder="Enter a location" />
+          <button type="button" onclick="cityname()">Get Weather</button>
         </div>
+        <div class="weather">
+          <div class="temperature">
+            <h2 id="temperature">00</h2>
+            <h2>&#176;C</h2>
+          </div>
+          <div class="condition">
+            <img id="img"/>
+            <h3 id="condition"></h3>
+          </div>
+        </div>
+      </div>
+      <div>
         <div class="details">
           <div class="detail">
-            <p>Feels like</p>
-            <p>18&#176;C</p>
+            <p >Feels like in &#176;C </p>
+            <p id="feel">00&#176;C</p>
           </div>
           <div class="detail">
-            <p>Humidity</p>
-            <p>50%</p>
+            <p>Humidity in %</p>
+            <p id="humidity">00%</p>
           </div>
           <div class="detail">
-            <p>Wind</p>
-            <p>20 km/h</p>
+            <p>Wind in Km/hr</p>
+            <p id="wind">00 km/h</p>
           </div>
         </div>
       </div>
