@@ -1,5 +1,6 @@
 const apiKey = "4a67a28812974097997201250230604";
 
+
 function cityname() {
   const city = document.getElementById("city");
   console.log("aaaaaaaaaaaaaaa", city.value);
@@ -24,5 +25,10 @@ function cityname() {
     })
     .catch((error) => {
       console.error("Error fetching weather data: ", error.current);
+    
     });
+    /*alert("Show Notification!");*/
 }
+
+
+
