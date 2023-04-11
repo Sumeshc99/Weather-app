@@ -209,7 +209,6 @@ div.transbox p {
 	.title {
 		/* background-color: #2a2a2c; */
 		color: white;
-		text-align: center;
 		font-size: 50px;
 		font-weight: bold;
 
@@ -217,23 +216,12 @@ div.transbox p {
 
 	
 
-	/*.temperature1 {
-		background-color: #2a2a2c;
-		height: 100px;
-		width: 400px;
-		border-radius: 10px;
-		flex-direction: row;
-		opacity: .4;
-		margin-top: 40px;
-		color: white;
-		
-	}*/
 
 	div.transbox {
 		margin-top: 40px;
 		display: flex;
 		height: 100px;
-		width: 400px;
+		width: 300px;
 		background-color: #1f2021;
 		border: 1px solid black;
 		border-radius: 10px;
@@ -256,6 +244,7 @@ div.transbox p {
 		border: none;
 	}
 	.details{
-		margin-right: 80px;
+		margin-left: 50px;
+		margin-right: 150px;
 	}
 }
