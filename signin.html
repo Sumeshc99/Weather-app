@@ -66,7 +66,7 @@ header{
     border: none;
     border-radius: 25px;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 0px 10px 40px -10px rgba(0, 0,0, 0.7);
 
@@ -76,51 +76,81 @@ header{
     background: linear-gradient(45deg,#c85bff,#b726ff);
 
 }
+
+
+    .mar {
+      margin-left: 30px;
+    }
+
+    .nav-item:hover {
+
+      transform: scale(1.1);
+    }
+  
 </style>
     </head>
 
 <body>
     <!--Nav bar-->
-    <div class="navcontainer">
-       
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-                <!-- Watch Weather -->
-                <a class="navbar-brand logo" href="#"><img src="./images/logo/logo.png" height="150px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="signup.html">Sign Up</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="signin.html">Sign In</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                        </li>
-
-                    </ul>
-                  
-                </div>
-            </div>
-        </nav>
-    </div>
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo/logo2.png" alt="" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+  
+  
+              <li class="nav-item mar">
+                <a class="nav-link active" href="index.html">
+  
+                  Home
+  
+                </a>
+              </li>
+              <li class="nav-item mar">
+                <a class="nav-link active" href="signup.html">
+  
+                  Sign Up
+  
+                </a>
+              </li>
+              <li class="nav-item mar">
+                <a class="nav-link active" href="signin.html">
+  
+                  Sign In
+  
+                </a>
+              </li>
+              <li class="nav-item mar">
+                <a class="nav-link active" href="about.html">
+  
+                  About Us
+  
+  
+                </a>
+              </li>
+              <li class="nav-item mar">
+                <a class="nav-link active" href="contactus.html">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+  
+            <form class="d-flex " role="search" >
+              <input class="form-control me-2" type="search" placeholder="Search City" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
    
        
                   
@@ -161,13 +191,16 @@ header{
                    
 
                     <div class="form-group">
-                        <label><input id="check_1" name="check_1" type="checkbox" required><small>I read and
+                        <label><input  name="check_1" type="checkbox" required><small>I read and
                                 agree to Terms & Conditions</small>
+
                             <div class="invalid-feedback">You must check the Box.</div>
                         </label>
                     </div>
 
-                        <input type="submit" class="butt" value="Login ">
+                  
+                      
+                        <a href="index.html"><input type="submit" class="butt" value="Login "></a>
 
                         <div class="form-group">
                             <p align="center">Don't have an account?<a href='signup.html'><b>Sign Up</b></a></p>
