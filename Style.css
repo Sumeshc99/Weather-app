@@ -69,10 +69,10 @@ body {
 	margin-top: 30px;
 }
 
-.temperature {
+.transbox {
 	height: 130px;
 	width: 130px;
-	background-color: #2a2a2c;
+	background-color: #262629;
 	color: white;
 	border-radius: 50%;
 	padding: 35px;
@@ -158,7 +158,7 @@ body {
 	
 	}
 	.location input {
-		width: 200px;
+		width: 400px;
 		height: 50px;
 		border-width: 2px;
 		border-radius: 10px;
@@ -186,6 +186,43 @@ body {
 		text-align: center;
 		padding: 1px;
 	}
+	/*.temperature1 {
+		background-color: #2a2a2c;
+		height: 100px;
+		width: 400px;
+		border-radius: 10px;
+		flex-direction: row;
+		opacity: .4;
+		margin-top: 40px;
+		color: white;
+		
+	}*/
+
+	div.transbox {
+		margin-top: 40px;
+	display: flex;
+		height: 100px;
+		width: 400px;
+		background-color: #1f2021;
+		border: 1px solid black;
+		border-radius: 10px;
+		opacity: .4;
+	  }
+	  
+	div.transbox p {
+		font-weight: bold;
+		color: white;
+		font-size: 30px;
+		margin-bottom: 15px;
+		margin-left: 10px;
+	  }
+	  #img{
+		height: 65px;
+		width: 65px;
+		margin-right: 0%;
+		padding-bottom: 10px;
+		border: none;
+	  }
     }
 
     
