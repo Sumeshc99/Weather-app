@@ -7,7 +7,8 @@
 /* body */
 
 body {
-	background-image: url(https://cdn.pixabay.com/photo/2012/06/08/06/19/clouds-49520_1280.jpg);
+	/*background-image: url(https://cdn.pixabay.com/photo/2012/06/08/06/19/clouds-49520_1280.jpg);*/
+	background-image: url(./images/bg.jpg);
 	width: 100%;
 	height: 100vh;
 	background-position: center;
@@ -33,6 +34,7 @@ body {
 	color: white;
 	text-align: center;
 	padding: 20px;
+	font-size: 40px;
 }
 
 .location {
@@ -50,16 +52,20 @@ body {
 	padding: 10px;
 	font-size: 18px;
 }
-
+.location button:hover{
+	background-color: rgb(238, 247, 247);
+	color: #0b0b11;
+}
 .location button {
 	background-color: #2a2a2c;
 	color: white;
 	border: none;
 	border-radius: 5px;
-	padding: 10px 20px;
 	margin-left: 10px;
 	font-size: 18px;
 	cursor: pointer;
+	height: 40px;
+	width: 120px;
 }
 
 .weather {
@@ -69,26 +75,38 @@ body {
 	margin-top: 30px;
 }
 
-.temperature {
-	height: 130px;
-	width: 130px;
-	background-color: #2a2a2c;
+div.transbox {
+	margin-top: 40px;
+	display: flex;
+	height: 80px;
+	width: 400px;
+	background-color: #1f2021;
+	border: 1px solid black;
+	border-radius: 10px;
+	opacity: .4;
+}
+
+div.transbox p {
+	font-weight: bold;
 	color: white;
-	border-radius: 50%;
-	padding: 35px;
-	font-size: 35px;
-	flex-direction: row;
-	
+	font-size: 30px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+#img {
+	height: 80px;
+	width: 65px;
+	margin-right: 0%;
+	padding-bottom: 10px;
+	border: none !important;
 }
 
 .condition {
 	display: flex;
 	align-items: center;
-	margin-top: 30px;
-}
-
-.condition img {
-	margin-right: 20px;
+	
 }
 
 .condition h3 {
@@ -101,11 +119,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 50px;
 }
 
 .detail {
-	margin: 0 20px;
+	margin-left: 100px;
 	text-align: center;
+	display: inline;
 }
 
 .detail p:first-child {
@@ -118,10 +139,14 @@ body {
 	font-size: 24px;
 	color: white;
 }
+.resource{
+	color: #f9f5f5;
+	text-decoration: none !important;
+margin-left: 100px;
+margin-top: 100px;
+text-decoration: none !important;
+font-size: 20px;
 
-.second {
-	
-	background-color: rgb(243, 241, 241);
 }
 
 /* footer */
@@ -133,7 +158,7 @@ body {
 	bottom: 0%;
 }
 
-.list_img{
+.list_img {
 	height: 500px;
 	margin-top: 30px;
 	margin-bottom: 20px;
@@ -143,29 +168,32 @@ body {
 
 /*-- for small screen devices--*/
 @media only screen and (max-width: 700px) {
-    .leftrightDiv {
+	.leftrightDiv {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		margin-top: 20px;
 	}
+
 	body {
 		background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3r_At9pbgHBnRu2JXsAKk_3YQi-oQVpFUig&usqp=CAU);
 		width: 100%;
 		height: 100%;
 		background-position: center;
 		background-size: cover;
-	
+
 	}
+
 	.location input {
-		width: 200px;
+		width: 400px;
 		height: 50px;
 		border-width: 2px;
 		border-radius: 10px;
 		padding: 10px;
 		font-size: 18px;
 	}
-	.location button{
+
+	.location button {
 		width: 120px;
 		background-color: #2a2a2c;
 		color: white;
@@ -177,15 +205,61 @@ body {
 		cursor: pointer;
 		padding: 3px;
 	}
+
 	.container {
-		margin: 2px;
+		margin: auto;
 	}
+
 	.title {
 		/* background-color: #2a2a2c; */
 		color: white;
 		text-align: center;
-		padding: 1px;
-	}
-    }
+		font-size: 50px;
+		font-weight: bold;
 
-    
+	}
+
+	
+
+	/*.temperature1 {
+		background-color: #2a2a2c;
+		height: 100px;
+		width: 400px;
+		border-radius: 10px;
+		flex-direction: row;
+		opacity: .4;
+		margin-top: 40px;
+		color: white;
+		
+	}*/
+
+	div.transbox {
+		margin-top: 40px;
+		display: flex;
+		height: 100px;
+		width: 400px;
+		background-color: #1f2021;
+		border: 1px solid black;
+		border-radius: 10px;
+		opacity: .4;
+	}
+
+	div.transbox p {
+		font-weight: bold;
+		color: white;
+		font-size: 30px;
+		margin-bottom: 15px;
+		margin-left: 10px;
+	}
+
+	#img {
+		height: 65px;
+		width: 65px;
+		margin-right: 0%;
+		padding-bottom: 10px;
+		border: none;
+	}
+	.details{
+		margin-right: 80px;
+	}
+}
