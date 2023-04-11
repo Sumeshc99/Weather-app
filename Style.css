@@ -248,3 +248,166 @@ div.transbox p {
 		margin-right: 200px;
 	}
 }
+
+footer{
+    
+    background-color:#07080a ;
+    margin-top: 10px;
+}
+.footer-container-main{
+    color: #ffffff;
+}
+.footer-logo{
+    height: 70px;
+    background-color: #e6c1c9;
+    border: 1px solid #ff0037;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-containers{
+    width: 350px;
+    margin: 20px;
+    padding: 10px;
+    
+
+}
+.footer-ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-li{
+    font-family: 'Fragment Mono', monospace;
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+}
+.footer-p{
+    font-family: 'Fragment Mono', monospace;
+    padding-left: 10px
+}
+.foorte-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.footer-h1{
+    
+
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2px; 
+}
+
+.footer-a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-a:hover{
+  text-shadow: 0 0 1px  #ffffff ;
+  color: #e6c1c9;
+   transition: 0.05s;
+}
+
+.copyrigh-sction{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Fragment Mono', monospace;
+    padding-bottom: 10px;
+    font-size: 10px;
+    
+}
+.media-section-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.media-section-img{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.media-img-yt:hover{
+    box-shadow: 0 0 5px 0 #ffffff ;
+    border-radius: 15px;
+}
+.media-img-insta:hover{
+    box-shadow: 0 0 5px 0 #ffffff ;
+    border-radius: 10px;
+}
+.media-img-git:hover{
+    box-shadow: 0 0 5px 0 #ffffff ;
+    border-radius: 100px;
+}
+.contributors-link-container-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #56595e;
+}
+
+.contributer-head-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-color:  #606877;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.contributor-link-ghthub-logo{
+    height: 15px;
+}
+.contributer-link{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Fragment Mono', monospace;
+    color: #ffffff;
+    display: block;
+    align-items: center;
+}
+.contributer-link:hover{
+    text-shadow: 0 0 1px  #ffffff ;
+    color: #e6c1c9;
+     transition: 0.05s;
+  }
+.footer-link-img{
+    height: 15px;
+    margin-right: 10px;
+}
+@media only screen and (max-width: 968px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-containers{
+        width: 200px;
+        margin: 10px;
+        padding: 5px;
+        
+    
+    }
+    .contributors-link-container-main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contributer-link{
+        margin: 10px;
+    }
+
+    .nav-item:hover {
+
+      transform: scale(1.1);
+    }
+  }
