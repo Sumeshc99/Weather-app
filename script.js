@@ -17,6 +17,10 @@ function cityname() {
       document.getElementById("feel").textContent = weather.feelslike_c;
       document.getElementById("humidity").textContent = weather.humidity;
       document.getElementById("wind").textContent = weather.wind_kph;
+      document.getElementById("gust").textContent = weather.gust_kph;
+      document.getElementById("pressure").textContent = weather.pressure_in;
+      document.getElementById("windDegree").textContent = weather.wind_degree;
+
     })
     .catch((error) => {
       console.error("Error fetching weather data: ", error.current);
