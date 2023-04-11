@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- css files -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="Style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- js files -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+  <!-- css files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="Style.css" />
 
-    <script type="text/javascript" src="script.js"></script>
+
 
     <!-- title -->
     <title>Weather App</title>
   </head>
- <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
-footer{
+  <style>
+    footer{
     
-    background-color:#090a0c ;
+    background-color:#07080a ;
     margin-top: 10px;
 }
 .footer-container-main{
@@ -53,7 +41,7 @@ footer{
     width: 350px;
     margin: 20px;
     padding: 10px;
-    display: inline-block;
+    
 
 }
 .footer-ul{
@@ -68,24 +56,20 @@ footer{
 }
 .footer-p{
     font-family: 'Fragment Mono', monospace;
-    padding-left: 200px;
-
+    padding-left: 10px
 }
 .foorte-logo-container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
 }
 .footer-h1{
-     
-     
-     
-     
+    
 
     display: inline;
     font-family: 'Roboto', sans-serif;
     padding-left: 2px; 
-    text-align: center;
 }
 
 .footer-a{
@@ -137,14 +121,14 @@ footer{
     justify-content: space-between;
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #26282b;
+    background-color: #56595e;
 }
 
 .contributer-head-title{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #ffffff;
-    background-color: #26282b;
+    background-color:  #606877;
     margin: 0;
     padding-bottom: 10px;
 }
@@ -179,6 +163,7 @@ footer{
         width: 200px;
         margin: 10px;
         padding: 5px;
+        
     
     }
     .contributors-link-container-main{
@@ -190,61 +175,61 @@ footer{
     }
 
 }
- </style>
+  </style>
+
   <body>
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="#">Watch Weather</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo/logo2.png" alt="" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+
+            <li class="nav-item mar">
+              <a class="nav-link active" href="index.html">
+
+                Home
+
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            <li class="nav-item mar">
+              <a class="nav-link active" href="signup.html">
+
+                Sign Up
+
+              </a>
+            </li>
+            <li class="nav-item mar">
+              <a class="nav-link active" href="signin.html">
+
+                Sign In
+
+              </a>
+            </li>
+            <li class="nav-item mar">
+              <a class="nav-link active" href="aboutus.html">
+
+                About Us
+
+
+              </a>
+            </li>
+            <li class="nav-item mar">
+              <a class="nav-link active" href="contactus.html">
+                Contact Us
+              </a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search City"
-              aria-label="Search"
-            />
+
+          <form class="d-flex" role="search" id="search">
+            <input class="form-control me-2" type="search" placeholder="Search City" aria-label="Search" />
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
@@ -253,147 +238,172 @@ footer{
       </div>
     </nav>
 
-    <!--main body-->
 
-    <div class="col-5 container">
-      <div class="title">
-        <h1>Weather App</h1>
-      </div>
-      <div class="location">
-        <input type="text" id="city" placeholder="Enter a location" />
-        <button type="button" onclick="savecity()">Get Weather</button>
-      </div>
-      <div class="weather">
-        <div class="temperature">
-          <h2>00&#176;C</h2>
+    <!--main body-->
+    <div class="leftrightDiv">
+      <div class="col-5 container">
+        <div class="title">
+          <h>Weather App</h>
         </div>
-        <div class="condition">
-          <img
-            src="https://www.weather.com/assets/resources/static/weather/images/icons/{{icon_code}}_white_128x128.png"
-          />
-          <h3>{{weather_condition}}</h3>
+        <div class="location">
+          <input type="text" id="city" placeholder="Enter a location" />
+          <button type="button" onclick="cityname()">Get Weather</button>
         </div>
-        <div class="details">
-          <div class="detail">
-            <p>Feels like</p>
-            <p>18&#176;C</p>
+        <div class="weather">
+          <div class="transbox">
+            <p id="temperature">00</p>
+            <p> &#176;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+            <div class="condition">
+              <img id="img" />
+              <h3 id="condition"></h3>
+            </div>
           </div>
-          <div class="detail">
-            <p>Humidity</p>
-            <p>50%</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="details">
+            <div class="detail">
+              <p>Feels like in &#176;C</p>
+              <p id="feel">00&#176;C</p>
+            </div>
+            <div class="detail">
+              <p>Humidity in %</p>
+              <p id="humidity">00%</p>
+            </div>
+            <div class="detail">
+              <p>Wind in Km/hr</p>
+              <p id="wind">00 km/h</p>
+            </div>
           </div>
-          <div class="detail">
-            <p>Wind</p>
-            <p>20 km/h</p>
+        </div>
+        <div>
+          <div class="details">
+            <div class="detail">
+              <p>Gust in Km/hr</p>
+              <p id="gust">00km/h</p>
+            </div>
+            <div class="detail">
+              <p>Pressure</p>
+              <p id="pressure">00km/h</p>
+            </div>
+            <div class="detail">
+              <p>Wind degree</p>
+              <p id="windDegree">00</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </header>
+  <div class="second">
 
-       <!-- FOOTER SECTION -->
-   <footer>
-    <div class="footer-container-main">
-        <div class="row">
-            <div class="footer-containers">
-                <div class="foorte-logo-container">
-                    <img src="./images/weather app.png " alt="weather-type-logo" class="footer-logo">
-                    <h1 class="footer-h1">weather app</h1>
+    <!--<a href="https://on.windy.com/7s818"><p class="resource">
+  Wind map & weather forecast</p></a>--->
+
+    <!-- footer -->
+    <div class="col-12 footer1">
+      <footer>
+        <div class="footer-container-main">
+            <div class="row">
+                <div class="footer-containers">
+                    <div class="foorte-logo-container">
+                        <img src="./images/weather app.png" alt="weather-type-logo" class="footer-logo">
+                        <h1 class="footer-h1">Weather App</h1>
+
+                    </div>
+
+                    <p class="footer-p"> If you want to see the sunshine, you have to weather the storm</p>
+                    <div class="media-section-container">
+                        <img src="/images/footer-img/github-logo.png" alt="" class="media-section-img media-img-git">
+                        <img src="/images/footer-img/instagram (1).png" alt=""
+                            class="media-section-img media-img-insta">
+                        <img src="/images/footer-img/youtube (2).png" alt="" class="media-section-img media-img-yt">
+                    </div>
                 </div>
+                <div class="footer-containers">
+                    <ul class="footer-ul">
+                        <h1 class="footer-h1">Quick Links</h1>
+                        <li class="footer-li"><a href="./index.html" class="footer-a"><img
+                                    src="./images/home img.png" alt="" class="footer-link-img"> Home</a></li>
+                        <li class="footer-li"><a href="./pages/login.html" class="footer-a"><img
+                                    src="./images/login img.png" alt="" class="footer-link-img"> Login</a>
+                        </li>
+                        <li class="footer-li"><a href="./pages/Aboutus.html" class="footer-a"><img
+                                    src="./images/about img.png" alt=""
+                                    class="footer-link-img">About</a></li>
+                        <li class="footer-li"><a href="#" class="footer-a"><img src="./images/call img.png"
+                                    alt="" class="footer-link-img">Contact</a>
+                        </li>
+                    </ul>
+                  </div>
+    
+                <div class="footer-containers">
+                    <ul class="footer-ul">
+                        <h1 class="footer-h1">Contact</h1>
+                        <li class="footer-li"><a href="#" class="footer-a"><img
+                                    src="./images/location img.png" alt="" class="footer-link-img">Nagpur,
+                                Maharashtra</a> </li>
+                        <li class="footer-li"> <a href="#" class="footer-a"><img
+                                    src="./images/phone-call img.png" alt="" class="footer-link-img">+91
+                                1122574896</a></li>
+                        <li class="footer-li"><a href="#" class="footer-a"><img src="./images/email img.png"
+                                    alt="" class="footer-link-img">weather-info@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+        <h2 class="contributer-head-title">Developers</h2>
+        <div class="contributors-link-container-main">
+
+            <div class="contributor-link-containers">
+                <a href="" class="contributer-link">
+                    <img src="https://github.com/sumesh99" alt="" class="contributor-link-ghthub-logo">
+                    Sumesh
+                </a>
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/TejashriGadhave1710" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                  Tejashri
+                </a>
+
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/bandini2001" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Bandini
+                </a>
+
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/mbpatil29" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Mahesh 
+                </a>
+
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/sonaligadekar20" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Sonali
+                </a>
+
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/Payalm518" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Payal
+                </a>
+
             </div>
         </div>
 
 
-                <p class="footer-p">When there are patches of clouds in the sky and you can see the sun, it is not going to storm.
-                  </p>
-          
-            <div class="footer-containers">
-              <ul class="footer-ul">
-                  <h1 class="footer-h1">Quick Links</h1>
-                  <li class="footer-li"><a href="./index.html" class="footer-a"><img
-                      src="./images/home img.png" alt="" class="footer-link-img"> Home</a></li>
-                  <li class="footer-li"><a href="./images/login img.png" class="footer-a"><img
-                              src="./images/login img.png" alt="" class="footer-link-img"> Login</a>
-                  </li>
-                  <li class="footer-li"><a href="./pages/Aboutus.html" class="footer-a"><img
-                              src="./images/about img.png" alt=""
-                              class="footer-link-img">About</a></li>
-              </ul>
-          </div>          
-          <div class="footer-containers">
-              <ul class="footer-ul">
-                  <h1 class="footer-h1">Contact</h1>
-                  <li class="footer-li"><a href="#" class="footer-a"><img
-                              src="./images/location img.png" alt=""
-                              class="footer-link-img">Nagpur, Maharashtra</a> </li>
-                  <li class="footer-li"> <a href="#" class="footer-a"><img
-                              src="images/call img.png" alt="" class="footer-link-img">91+2212562487</a></li>
-                  <li class="footer-li"><a href="#" class="footer-a"><img
-                              src="./images/email img.png" alt=""
-                              class="footer-link-img"> weather@gmail.com</a></li>
-              </ul>
-          </div>
-          <div class="footer-containers">
-            <ul class="footer-ul">
-                <h1 class="footer-h1">social</h1>
-                <li class="footer-li"><a href="./index.html" class="footer-a"><img
-                    src="./images/insta img.png" alt="" class="footer-link-img"> Instagram</a></li>
-                <li class="footer-li"><a href="./images/facebook img.png" class="footer-a"><img
-                            src="./images/facebook img.png" alt="" class="footer-link-img"> Facebook</a>
-                </li>
-                <li class="footer-li"><a href="./pages/Aboutus.html" class="footer-a"><img
-                            src="./images/twitter img.jpg" alt=""
-                            class="footer-link-img"> Twitter</a></li>
-                </div>
-   
-      </div>
-  </div>
-  <h2 class="contributer-head-title">Developers</h2>
-  <div class="contributors-link-container-main">
-
-      <div class="contributor-link-containers">
-          <a href="https://github.com/Sumeshc99" class="contributer-link">
-              <img src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
-              Sumesh
-          </a>
-      </div>
-      <div class="contributer-link-containers">
-          <a href="https://github.com/TejashriGadhave1710" class="contributer-link"><img
-                  src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
-              Tejashri 
-          </a>
-
-      </div>
-      <div class="contributer-link-containers">
-          <a href="https://github.com/Bandini2001/" class="contributer-link"><img
-                  src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
-              Bandini
-          </a>
-
-      </div>
-    
-    <div class="contributer-link-containers">
-        <a href="https://github.com/mbpatil29" class="contributer-link"><img
-                src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
-            Mahesh Patil
-        </a>
+        <div class="copyrigh-sction">
+            Copyright © Weather APP 2023.
+        </div>
+    </footer>
     </div>
-    <div class="contributer-link-containers">
-        <a href="https://github.com/payalm518" class="contributer-link"><img
-                src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
-            Payal
-        </a>
-    </div>
-    <div class="contributer-link-containers">
-        <a href="https://github.com/" class="contributer-link"><img
-                src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
-            Sonali 
-        </a>
-    </div>
-  
-</div>
-<div class="copyrigh-sction">
-  Copyright © weather app 2023.
-</div>
-</footer>
   </body>
 </html>
