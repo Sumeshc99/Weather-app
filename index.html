@@ -13,26 +13,180 @@
 
 
 
-  <!-- title -->
-  <title>Weather App</title>
-
+    <!-- title -->
+    <title>Weather App</title>
+  </head>
   <style>
-    .mar {
-      margin-left: 30px;
+    footer{
+    
+    background-color:#07080a ;
+    margin-top: 10px;
+}
+.footer-container-main{
+    color: #ffffff;
+}
+.footer-logo{
+    height: 70px;
+    background-color: #e6c1c9;
+    border: 1px solid #ff0037;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-containers{
+    width: 350px;
+    margin: 20px;
+    padding: 10px;
+    
+
+}
+.footer-ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-li{
+    font-family: 'Fragment Mono', monospace;
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+}
+.footer-p{
+    font-family: 'Fragment Mono', monospace;
+    padding-left: 10px
+}
+.foorte-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.footer-h1{
+    
+
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2px; 
+}
+
+.footer-a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-a:hover{
+  text-shadow: 0 0 1px  #ffffff ;
+  color: #e6c1c9;
+   transition: 0.05s;
+}
+
+.copyrigh-sction{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Fragment Mono', monospace;
+    padding-bottom: 10px;
+    font-size: 10px;
+    
+}
+.media-section-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.media-section-img{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.media-img-yt:hover{
+    box-shadow: 0 0 5px 0 #ffffff ;
+    border-radius: 15px;
+}
+.media-img-insta:hover{
+    box-shadow: 0 0 5px 0 #ffffff ;
+    border-radius: 10px;
+}
+.media-img-git:hover{
+    box-shadow: 0 0 5px 0 #ffffff ;
+    border-radius: 100px;
+}
+.contributors-link-container-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #56595e;
+}
+
+.contributer-head-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-color:  #606877;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.contributor-link-ghthub-logo{
+    height: 15px;
+}
+.contributer-link{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Fragment Mono', monospace;
+    color: #ffffff;
+    display: block;
+    align-items: center;
+}
+.contributer-link:hover{
+    text-shadow: 0 0 1px  #ffffff ;
+    color: #e6c1c9;
+     transition: 0.05s;
+  }
+.footer-link-img{
+    height: 15px;
+    margin-right: 10px;
+}
+@media only screen and (max-width: 968px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-containers{
+        width: 200px;
+        margin: 10px;
+        padding: 5px;
+        
+    
+    }
+    .contributors-link-container-main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contributer-link{
+        margin: 10px;
     }
 
+<<<<<<< HEAD
+}
+=======
     .nav-item:hover {
 
       transform: scale(1.1);
     }
+>>>>>>> 703c3afc5b86f79fbf1edef6e3a97d87c4751153
   </style>
 
-</head>
-
-<body>
-  <header>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+  <body>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./images/logo/logo2.png" alt="" height="40">
@@ -155,18 +309,108 @@
     <!--<a href="https://on.windy.com/7s818"><p class="resource">
   Wind map & weather forecast</p></a>--->
 
-  </div>
-  <!-- footer -->
-  <div class="col-12 footer1">
-    <!-- add footer content -->
-  </div>
+    <!-- footer -->
+    <div class="col-12 footer1">
+      <footer>
+        <div class="footer-container-main">
+            <div class="row">
+                <div class="footer-containers">
+                    <div class="foorte-logo-container">
+                        <img src="./images/weather app.png" alt="weather-type-logo" class="footer-logo">
+                        <h1 class="footer-h1">Weather App</h1>
 
-  <!-- js files -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+                    </div>
 
-  <script type="text/javascript" src="script.js"></script>
-</body>
+                    <p class="footer-p"> If you want to see the sunshine, you have to weather the storm</p>
+                    <div class="media-section-container">
+                        <img src="/images/footer-img/github-logo.png" alt="" class="media-section-img media-img-git">
+                        <img src="/images/footer-img/instagram (1).png" alt=""
+                            class="media-section-img media-img-insta">
+                        <img src="/images/footer-img/youtube (2).png" alt="" class="media-section-img media-img-yt">
+                    </div>
+                </div>
+                <div class="footer-containers">
+                    <ul class="footer-ul">
+                        <h1 class="footer-h1">Quick Links</h1>
+                        <li class="footer-li"><a href="./index.html" class="footer-a"><img
+                                    src="./images/home img.png" alt="" class="footer-link-img"> Home</a></li>
+                        <li class="footer-li"><a href="./pages/login.html" class="footer-a"><img
+                                    src="./images/login img.png" alt="" class="footer-link-img"> Login</a>
+                        </li>
+                        <li class="footer-li"><a href="./pages/Aboutus.html" class="footer-a"><img
+                                    src="./images/about img.png" alt=""
+                                    class="footer-link-img">About</a></li>
+                        <li class="footer-li"><a href="#" class="footer-a"><img src="./images/call img.png"
+                                    alt="" class="footer-link-img">Contact</a>
+                        </li>
+                    </ul>
+                  </div>
+    
+                <div class="footer-containers">
+                    <ul class="footer-ul">
+                        <h1 class="footer-h1">Contact</h1>
+                        <li class="footer-li"><a href="#" class="footer-a"><img
+                                    src="./images/location img.png" alt="" class="footer-link-img">Nagpur,
+                                Maharashtra</a> </li>
+                        <li class="footer-li"> <a href="#" class="footer-a"><img
+                                    src="./images/phone-call img.png" alt="" class="footer-link-img">+91
+                                1122574896</a></li>
+                        <li class="footer-li"><a href="#" class="footer-a"><img src="./images/email img.png"
+                                    alt="" class="footer-link-img">weather-info@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+        <h2 class="contributer-head-title">Developers</h2>
+        <div class="contributors-link-container-main">
 
+            <div class="contributor-link-containers">
+                <a href="https://github.com/Sumeshc99/" class="contributer-link">
+                    <img src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Sumesh
+                </a>
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/TejashriGadhave1710" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                  Tejashri
+                </a>
+
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/bandini2001" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Bandini
+                </a>
+
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/mbpatil29" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Mahesh 
+                </a>
+
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/sonaligadekar20" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Sonali
+                </a>
+
+            </div>
+            <div class="contributer-link-containers">
+                <a href="https://github.com/Payalm518" class="contributer-link"><img
+                        src="./images/git hub img.png" alt="" class="contributor-link-ghthub-logo">
+                    Payal
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="copyrigh-sction">
+            Copyright © Weather APP 2023.
+        </div>
+    </footer>
+    </div>
+  </body>
 </html>
