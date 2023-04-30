@@ -1,5 +1,6 @@
-const apiKey = "4a67a28812974097997201250230604";
+import apikey1 from "./apikey";
 
+const apiKey = apikey1;
 
 function cityname() {
   const city = document.getElementById("city");
@@ -29,6 +30,8 @@ function cityname() {
     });
     /*alert("Show Notification!");*/
 }
+
+export default cityname();
 
 
 
